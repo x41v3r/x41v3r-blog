@@ -1,15 +1,10 @@
-# Windows应用开发
+# Windows应用开发（dotNET框架下）
 
-## 一、C#程序设计语言
+## 一、Visual C/C++
 
+## 二、Visual C#
 
-
-
-
-
-
-
-## 二、PowerShell
+## 三、PowerShell
 
 
 
