@@ -76,7 +76,7 @@
     *   all：将样式用于所有设备（默认）
     *   print：将样式用于打印机模式（**只在打印模式下才会应用该样式**）
     *   screen：将样式用于计算机屏幕
-*   有多个<style\>标签的情况下，默认未设置media属性的<style\>标签设置的优先级低于设置了media属性的<style/>标签，只有当其他各个设置了media属性的<style/>标签的media条件都不符合时才会应用默认style标签的样式。
+*   有多个style标签的情况下，默认未设置media属性的style标签设置的优先级低于设置了media属性的style标签，只有当其他各个设置了media属性的style标签的media条件都不符合时才会应用默认style标签的样式。
 
 
 
