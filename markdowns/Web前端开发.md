@@ -44,7 +44,7 @@
 <!--每 5 秒刷新一下浏览器并跳转到指定页面-->
 <meta http-equiv="refresh" content="5;http://www.baidu.com">
 ```
-*   <meta\>标签永远位于<head\>标签内部。
+*   meta标签永远位于head标签内部。
 *   content 属性必须和 name 或 http-equiv 属性共存亡。
 *   
 
