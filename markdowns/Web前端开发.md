@@ -65,11 +65,19 @@
 			background: black;
 		}
     </style>
+    <style type="text/css" media="print">
+        h1 {color: black}
+        p {color: black}
+    	a {
+		    color: blue;
+			background: black;
+		}
+    </style>
 </head>
 <body>
     <h1>header 1</h1>
     <p>A paragraph.</p>
-    <a href="http://www.baidu.com" target="">好看的<a/>
+    <a href="http://www.baidu.com" target="">这里有好康的！<a/>
 </body>
 </html>
 ```
