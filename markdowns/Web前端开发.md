@@ -25,7 +25,7 @@
 
 ### 2.基础
 
-#### （1）meta元素
+#### （1）meta标签
 
 ```html
 <!--指定字符集为UTF-8，防止乱码-->
@@ -43,7 +43,7 @@
 <!--定义网页的作者-->
 <meta name="author" content="x41v3r">
 
-<!--每 5 秒刷新一下浏览器并跳转到指定页面-->
+<!--打开 5 秒后刷新一下浏览器并跳转到指定页面-->
 <meta http-equiv="refresh" content="5;http://www.baidu.com">
 ```
 *   meta标签永远位于head标签内部。
@@ -86,30 +86,42 @@
     *   all：将样式用于所有设备（默认）
     *   print：将样式用于打印机模式（**只在打印模式下才会应用该样式**）
     *   screen：将样式用于计算机屏幕
-*   有多个style标签的情况下，默认未设置media属性的style标签设置的优先级低于设置了media属性的style标签，只有当其他各个设置了media属性的style标签的media条件都不符合时才会应用默认style标签的样式。
+*   如果要使用media属性，那么我们需要将正常浏览模式下的style的media属性设置为screen（不可以不写），并将此style标签放在各个style标签的最后。
 
+#### （3）base标签
 
+> base标签用来设置一个基准 URL，让 HTML 文档中的相对链接在此基础上进行解析。
 
+```html
+<!--为body内使用相对路径a标签提供基准url-->
+<base href="http://www.bilibili.com" target="_blank">
 
+<!--使用相对路径的a标签，以base标签内的url为基准-->
+<a href="/video/BV1D24y1X7TV">程女士</a>
 
+<!--不使用相对路径的a标签，不受base标签内部url的影响-->
+<a href="http://www.baidu.com">百度一下</a>
+```
+*   base必须放在head标签内
+*   只影响同一个文件内使用相对路径的a标签，不影响使用绝对路径的a标签
 
-> 看到小甲鱼b站视频 《零基础入门学习Web开发》 p 6  
-> 人的一切痛苦，本质上都是对自己的无能的愤怒。
+### 3.图片
 
+#### （1）area标签
 
-
-
-### 2.img标签和a标签
-
-#### （1）img标签
+#### （2）img标签
 
 ```html
 <img alt="hi!" src="pics/picture.png" width="800px" height="500px" />
 ```
 *   alt属性值：鼠标悬停在图片上方的显示内容
-*   width和height属性表示用于设置图片的显示大小
+*   width和height属性用于设置图片的显示像素大小
 
-#### （2）a标签
+#### （3） 
+
+### 4.链接
+
+#### （1）a标签
 
 ```html
 <a href="https://baidu.com" target="_blank" >有问题，问百度</a>
@@ -120,19 +132,27 @@
     *   _self   在当前窗口打开（默认）
     *   
 
+#### （2）link标签
 
+```html
+<!--连接外部样式表-->
+<link rel="stylesheet" type="text/css" href="css/style_file.css">
 
+<!--链接网页图标-->
+<link rel="icon" type="image/x-icon" href="img/site-icon.ico">
+```
+*   rel属性置为"stylesheet"链接外部样式表时，可以使用style标签的media属性。
+*   
 
+## 二、CSS
 
-
-
-
-
-
-
-## 二、JavaScript
-
-## 三、CSS
+## 三、JavaScript
 
 ## Vue.js框架
 
+
+
+
+
+> 看到小甲鱼b站视频 《零基础入门学习Web开发》 p 7
+> 人的一切痛苦，本质上都是对自己的无能的愤怒。
