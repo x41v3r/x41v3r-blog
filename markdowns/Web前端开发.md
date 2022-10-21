@@ -114,8 +114,10 @@
 ```html
 <img alt="hi!" src="pics/picture.png" width="800px" height="500px" />
 ```
-*   alt属性值：鼠标悬停在图片上方的显示内容
+*   alt属性值：鼠标悬停在图片上方时显示的内容
+*   src属性填写目标图片相对于当前html文件的相对路径
 *   width和height属性用于设置图片的显示像素大小
+*   
 
 #### （3） 
 
