@@ -57,19 +57,19 @@
 <head>
     <meta charset="UTF-8">
     <title>html5的style标签实例</title>
-    <style type="text/css">
-        h1 {color: red}
-        p {color: blue}
-    	a {
-		    color: yellow;
-			background: black;
-		}
-    </style>
     <style type="text/css" media="print">
         h1 {color: black}
         p {color: black}
     	a {
 		    color: blue;
+			background: black;
+		}
+    </style>
+    <style type="text/css" media="screen">
+        h1 {color: red}
+        p {color: blue}
+    	a {
+		    color: yellow;
 			background: black;
 		}
     </style>
@@ -103,7 +103,7 @@
 <a href="http://www.baidu.com">百度一下</a>
 ```
 *   base必须放在head标签内
-*   只影响同一个文件内使用相对路径的a标签，不影响使用绝对路径的a标签
+*   只能影响同一个文件内使用相对路径的a标签，不会影响使用绝对路径的a标签
 
 ### 3.图片
 
@@ -159,4 +159,5 @@
 
 
 > 看到小甲鱼b站视频 《零基础入门学习Web开发》 p 7
-> 人的一切痛苦，本质上都是对自己的无能的愤怒。
+> 
+> 人的一切痛苦，本质上都是对自己的无能的愤怒。(王小波)
