@@ -46,7 +46,7 @@
 <!--打开 5 秒后刷新一下浏览器并跳转到指定页面-->
 <meta http-equiv="refresh" content="5;http://www.baidu.com">
 ```
-*   meta标签永远位于head标签内部。
+*   meta必须放在head标签内。
 *   content 属性必须和 name 或 http-equiv 属性共存亡。
 *   
 
@@ -81,6 +81,7 @@
 </body>
 </html>
 ```
+*   style必须放在head标签内。
 *   type属性只能是"text/css"。
 *   media属性用来表明文档在什么情况下应该使用该元素中定义的样式。
     *   all：将样式用于所有设备（默认）
