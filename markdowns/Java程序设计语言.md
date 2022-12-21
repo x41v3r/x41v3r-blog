@@ -235,7 +235,7 @@ char charVar_5 = stringVar.charAt(4);
 |  ^   | 异或运算  |
 |  ~   | 取反运算  |
 
-![](pics/Java运算符优先级.png)
+![](pictures/Java运算符优先级.png)
 
 ### 4.流程控制
 
