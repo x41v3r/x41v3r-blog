@@ -16,8 +16,8 @@ namespace HelloWorld//命名空间，用于对代码进行分类
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            // Console.WriteLine("Hello World! 换行");
-            // Console.Write("Hello World! 不换行");
+            // Console.WriteLine("Hello World! 自动换行");
+            // Console.Write("Hello World! 不自动换行");
         }
     }
 }
@@ -70,12 +70,15 @@ Console.WriteLine(length);
 #### （2）数据类型
 
 > 数值类型
-
+* 基本整型
+  * 
+* 浮点型
 > 字符和字符串
 * 字符类型：char
   * char charVar = 'c';
   * 字符类型数据有且只有一个字符，这个字符需要放在一对英文的单引号内
 * 字符串类型：String
+> 布尔类型
 
 > 引用类型
 
@@ -92,6 +95,6 @@ Console.WriteLine(length);
 |   \\a     | Alert或Bell，操作系统会有提示音|
 
 
-## 二、C#面向对象
 
+## 二、C#面向对象
 ## 三、C#高级编程
