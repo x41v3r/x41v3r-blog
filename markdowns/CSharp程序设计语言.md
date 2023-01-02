@@ -43,7 +43,7 @@ namespace HelloWorld//命名空间，用于对代码进行分类
 |   \\r     | 回车，但不换行 |
 |   \\t     | 水平制表符     |
 |   \\v     | 垂直制表符     |
-|   \\a     | Alert 或 bell |
+|   \\a     | Alert或Bell，操作系统会有提示音|
 
 
 ## 二、C#面向对象
