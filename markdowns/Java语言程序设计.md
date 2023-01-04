@@ -47,8 +47,9 @@ public class Hello{
 #### （1）变量
 
 > 变量：其实就是内存中的一段存储区域，能够在同一个范围内不断变化，是程序的最基本的存储单元
-*  Java中的变量必须先声明之后使用，因为只有声明后这个变量才会被在内存中加载，其中局部变量声明之后在使用之前必须先初始化（赋初值）
-* 变量都定义在其作用域内，在作用域内是有效的，其实作用域就是声明这个变量时所在的大括号内
+*  Java中的变量必须先声明之后使用，因为只有声明后这个变量才会被在内存中加载
+*  其中**局部变量声明之后不会被自动初始化**，因此在使用之前必须先进行初始化（赋初值）
+* 变量都定义在其作用域内，只在这个作用域内有效，其实作用域就是声明这个变量时所在的大括号内
 * 同一个作用域内不可以声明两个同名的变量，同一个变量不可以在同一个作用域内多次定义
 > 变量的分类
 * 局部变量：定义在方法的形参列表或方法体内的变量
@@ -73,7 +74,7 @@ public class Hello{
 	* 可以使用转义字符'\n'、'\t'等
 > 布尔型
 * boolean
-* boolean类型的变量只能取这两个值之一：true或false
+* boolean类型的变量只能取两个值之一：**true** 或 **false**
 
 #### （3）引用数据类型
 
@@ -95,7 +96,7 @@ public class Hello{
 * double doubleVar = 12.9;
 * int intVar = (int)doubleVar;
 * 说明：
-	* 浮点型向整形强制类型转换，使用截取整数部分的方式(俗称”截断操作“)，而不是四舍五入，转换之后数据的精度可能降低，称为精度损失
+	* 浮点型向整形强制类型转换，采用的是**直接截取浮点数整数部分的方式(俗称“截断操作”)**，而不是四舍五入，转换之后数据的精度可能降低，称为精度损失
 	* 变量向数值范围不够的数据强制类型转换，并不会编译报错
 	* 整型常量默认是int型，浮点型常量默认是double型
 
@@ -114,7 +115,7 @@ char charVar_3 = stringVar.charAt(2);
 char charVar_4 = stringVar.charAt(3);
 char charVar_5 = stringVar.charAt(4);
 ```
-* String类型的""内可以只有一个字符，也可以什么都没有，但是char类型的’’内必须有且仅有一个字符，可以是一个空格
+* String类型值的*双引号内可以只有一个字符，也可以什么都没有*，但是char类型的*单引号''内必须有且仅有一个字符，该字符可以是一个空格*，但是**不能什么都没有，也不能有超过1个字符**
 * String可以分别和8种基本的数据类型进行运算，但是都只能是连接运算
 
 ### 3.运算符
@@ -463,7 +464,46 @@ System.out.println(arrayVar[0].toString());
 
 ### 1.Java基本元素：类和对象
 
+#### （1）类的设计，也就是设计类的成员
 
+```c#
+class TestClass{
+	//属性
+	String field1;
+	int field2;
+
+	//方法
+	public void method1(){
+		System.out.println("这是方法1");
+	}
+	public void method2(){
+		System.out.println("这是方法2");
+	}
+}
+```
+
+#### （2）类和对象的使用
+
+```c#
+public class OOPTest{
+	public static void main(String[] args){
+		//创建TestClass的对象，即类的实例化，也就是实例化TestClass类
+		TestClass testObject = new TestClass();
+
+		//访问TestClass类中的属性
+		testObject.field1 = "hello,object";
+		testObject.field2 = 20;
+
+		//调用TestClass类中的方法
+		testObject.method1();
+		testObject.method2();
+	}
+}
+```
+
+#### （3）属性（成员变量、field、域、字段）
+
+#### （4）方法（成员方法、函数、method）
 
 ## 三、Java高级编程
 
